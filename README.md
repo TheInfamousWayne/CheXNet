@@ -1,13 +1,10 @@
 # CheXNet-with-localization
-ADLxMLDS 2017 fall final
 
-Team:XD
 
-*黃晴 (R06922014), 王思傑 (R06922019), 曹爗文 (R06922022), 傅敏桓 (R06922030), 湯忠憲 (R06946003)*
 ## Weakly supervised localization :
 In this task, we have to plot bounding boxes for each disease finding in a single chest X-ray without goundtruth (X, Y, width, height) in training set. The workflow is shown below:
 ### Workflow :
-![Alt Text](https://github.com/thtang/CheXNet-with-localization/blob/master/output/process_flow.png)
+![Alt Text](https://github.com/theinfamouswayne/CheXNet/tree/master/output/process_flow.png)
 1) Predict findings
 2) Use the classifier to plot heatmap (Grad-CAM)
 3) Plot the bounding box base on Grad-CAM
@@ -65,24 +62,24 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 ```
 ### Model :
-![Alt Text](https://github.com/thtang/CheXNet-with-localization/blob/master/output/multi_label_denseNet.png)
+![Alt Text](https://github.com/theinfamouswayne/CheXNet/tree/master/output/multi_label_denseNet.png)
 * Image is modified from Ref [2].
 
 ### Result :
 *Prediction*<br>
-<img src="https://github.com/thtang/CheXNet-with-localization/blob/master/output/prediction.png" width="320"><br>
+<img src="https://github.com/theinfamouswayne/CheXNet/tree/master/output/prediction.png" width="320"><br>
 *Heatmap per disease*
-![Alt Text](https://github.com/thtang/CheXNet-with-localization/blob/master/output/heatmap_per_class.jpg)
+![Alt Text](https://github.com/theinfamouswayne/CheXNet/tree/master/output/heatmap_per_class.jpg)
 Visualization of some heat maps with its ground-truth label (red) and its prediction
 (blue) selected from each disease class. (From top-left to bottom: Atelectasis, Cardiomegaly,
 Effusion, Infiltration, Mass, Nodule, Pneumonia and Pneumothorax)
 
 *Bounding Box per patient*
-![Alt Text](https://github.com/thtang/CheXNet-with-localization/blob/master/output/bb_select.JPG)
+![Alt Text](https://github.com/theinfamouswayne/CheXNet/tree/master/output/bb_select.JPG)
 Visualization of some images with its ground-truth label (red) and its prediction
 (blue) selected from each disease class.
 
-**Refers to the [report](https://github.com/thtang/CheXNet-with-localization/blob/master/report.pdf) for more experiment results.**
+**Refers to the [report](https://github.com/theinfamouswayne/CheXNet/tree/master/report.pdf) for more experiment results.**
 ## Reference:
 1. *ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases* [[Arxiv]](https://arxiv.org/pdf/1705.02315.pdf)
 2. *LEARNING TO DIAGNOSE FROM SCRATCH BY EXPLOITING DEPENDENCIES AMONG LABELS* [[Arxiv]](https://arxiv.org/pdf/1710.10501.pdf)
@@ -90,4 +87,4 @@ Visualization of some images with its ground-truth label (red) and its predictio
 4. *Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization* [[Arxiv]](https://arxiv.org/pdf/1610.02391.pdf)
 
 ## Contact:
-Feel free to contact me (thtang@nlg.csie.ntu.edu.tw) if you have any problem.
+Feel free to contact me (theinfamouswayne@gmail.com) if you have any problem.
