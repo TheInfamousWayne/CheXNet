@@ -86,5 +86,3 @@ Visualization of some images with its ground-truth label (red) and its predictio
 3. *CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning* [[Arxiv]](https://arxiv.org/pdf/1711.05225.pdf)
 4. *Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization* [[Arxiv]](https://arxiv.org/pdf/1610.02391.pdf)
 
-## Contact:
-Feel free to contact me (theinfamouswayne@gmail.com) if you have any problem.
